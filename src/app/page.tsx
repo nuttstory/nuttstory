@@ -51,10 +51,16 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="mb-5 text-sm text-[#5d4736]">
-            Follow our Facebook page for the newest product launches, gift box
-            ideas, and behind-the-scenes updates from NuttStory.
-          </p>
+          <div className="fb-marquee mb-5" aria-label="Facebook updates ticker">
+            <p>
+              Follow our Facebook page for the newest product launches, gift box
+              ideas, and behind-the-scenes updates from NuttStory.
+            </p>
+            <p aria-hidden="true">
+              Follow our Facebook page for the newest product launches, gift box
+              ideas, and behind-the-scenes updates from NuttStory.
+            </p>
+          </div>
 
           <div className="grid gap-4 md:grid-cols-3">
             <a
