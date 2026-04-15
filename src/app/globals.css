@@ -24,3 +24,78 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.social-card {
+  position: relative;
+  overflow: hidden;
+  transform: translateY(18px) scale(0.98);
+  opacity: 0;
+  animation: cardReveal 650ms ease-out forwards;
+  box-shadow: 0 10px 24px -20px rgba(69, 42, 21, 0.65);
+}
+
+.social-card::before {
+  content: "";
+  position: absolute;
+  inset: -80% auto auto -40%;
+  width: 60%;
+  height: 260%;
+  transform: rotate(22deg);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.42),
+    rgba(255, 255, 255, 0)
+  );
+  transition: transform 700ms ease;
+  pointer-events: none;
+}
+
+.social-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  border-color: #ddb686;
+  box-shadow: 0 22px 42px -24px rgba(108, 68, 33, 0.72);
+}
+
+.social-card:hover::before {
+  transform: translateX(180%) rotate(22deg);
+}
+
+.social-card:nth-child(1) {
+  animation-delay: 80ms;
+}
+
+.social-card:nth-child(2) {
+  animation-delay: 190ms;
+}
+
+.social-card:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+@keyframes cardReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-card {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .social-card::before {
+    display: none;
+  }
+
+  .social-card:hover {
+    transform: none;
+  }
+}

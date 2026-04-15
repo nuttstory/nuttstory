@@ -50,7 +50,7 @@ export default function Home() {
               href={pageUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-[#eadfcf] bg-[#fdfaf4] p-4 transition hover:shadow-md"
+              className="social-card rounded-xl border border-[#eadfcf] bg-[#fdfaf4] p-4 transition hover:shadow-md"
             >
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#8e5a2a]">
                 Product Updates
@@ -68,7 +68,7 @@ export default function Home() {
               href={pageUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-[#eadfcf] bg-[#fdfaf4] p-4 transition hover:shadow-md"
+              className="social-card rounded-xl border border-[#eadfcf] bg-[#fdfaf4] p-4 transition hover:shadow-md"
             >
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#8e5a2a]">
                 Gift Inspiration
@@ -86,7 +86,7 @@ export default function Home() {
               href={pageUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-[#eadfcf] bg-[#fdfaf4] p-4 transition hover:shadow-md"
+              className="social-card rounded-xl border border-[#eadfcf] bg-[#fdfaf4] p-4 transition hover:shadow-md"
             >
               <p className="mb-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#8e5a2a]">
                 Brand Stories
