@@ -2,9 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   const pageUrl = "https://www.facebook.com/people/NuttStory/61574369964207/";
+  const whatsappUrl =
+    "https://wa.me/923337819920?text=Hi%20NuttStory%2C%20I%20want%20to%20place%20an%20order.";
 
   return (
-    <main className="min-h-screen bg-[#f6f2e8] px-2 py-3 sm:p-4 md:p-8">
+    <main className="relative min-h-screen bg-[#f6f2e8] px-2 py-3 sm:p-4 md:p-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-5 md:gap-8">
         <div className="overflow-hidden rounded-xl shadow-lg md:rounded-2xl md:shadow-xl">
           <Image
@@ -100,6 +102,17 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Order on WhatsApp"
+        className="fixed bottom-5 right-4 z-50 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-xl transition hover:bg-[#1faa54] md:bottom-7 md:right-7"
+      >
+        <span aria-hidden="true">WhatsApp</span>
+        Order
+      </a>
     </main>
   );
 }
