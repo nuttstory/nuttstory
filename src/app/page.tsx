@@ -6,7 +6,7 @@ export default function Home() {
     "https://wa.me/923337819920?text=Hi%20NuttStory%2C%20I%20want%20to%20place%20an%20order.";
 
   return (
-    <main className="relative min-h-screen bg-[#f6f2e8] px-2 py-3 sm:p-4 md:p-8">
+    <main className="relative min-h-screen overflow-x-hidden bg-[#f6f2e8] px-2 py-3 sm:p-4 md:p-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-5 md:gap-8">
         <div className="overflow-hidden rounded-xl shadow-lg md:rounded-2xl md:shadow-xl">
           <Image
@@ -23,10 +23,10 @@ export default function Home() {
         <section className="rounded-2xl bg-white/90 p-5 shadow-lg md:p-8">
           <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8e5a2a]">
+              <p className="fb-kicker text-sm font-semibold uppercase tracking-[0.18em] text-[#8e5a2a]">
                 Fresh From Facebook
               </p>
-              <h2 className="text-2xl font-bold text-[#2e1f14] md:text-3xl">
+              <h2 className="fb-heading text-2xl font-bold text-[#2e1f14] md:text-3xl">
                 NuttStory Social Highlights
               </h2>
             </div>
@@ -34,8 +34,19 @@ export default function Home() {
               href={pageUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex w-fit rounded-full bg-[#8e5a2a] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#734722]"
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-[#1877F2] px-5 py-2.5 text-sm font-semibold text-white shadow-md transition hover:bg-[#166fe0]"
             >
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                className="h-5 w-5 flex-none"
+              >
+                <circle cx="12" cy="12" r="12" fill="#1877F2" />
+                <path
+                  fill="#FFFFFF"
+                  d="M13.7 8.2h2V5.4h-2.3c-2.7 0-4.4 1.6-4.4 4.2v1.9H7v2.8h2v4.3h2.9v-4.3h2.4l.5-2.8h-2.9V9.9c0-1 .5-1.7 1.8-1.7z"
+                />
+              </svg>
               Visit Facebook Page
             </a>
           </div>
